@@ -2,7 +2,6 @@
 
 var counter = 0;
 
-
 function firstQuestion() {
   alert('Hello. Please answer some questions to learn a little bit about me!');
   var answerOne = prompt('Do I like spam? Please answer yes or no.').toLowerCase();
@@ -19,7 +18,7 @@ function firstQuestion() {
 
 firstQuestion();
 
-secondQuestion() {
+function secondQuestion() {
   var answerTwo = parseInt(prompt('How many toes do I have?').toLowerCase());
   var responseTwo = 10;
   if (answerTwo === responseTwo){
@@ -34,49 +33,66 @@ secondQuestion() {
 
 secondQuestion();
 
-var answerThree = prompt('What is my favorite food?').toLowerCase();
-var responseThree = 'Vietnamese'.toLowerCase();
-if (answerThree === responseThree) {
-  alert('Yes, I love it!');
-  counter++;
-} else {
-  alert('No, it\'s Vietnamese food');
+function thirdQuestion() {
+  var answerThree = prompt('What is my favorite food?').toLowerCase();
+  var responseThree = 'Vietnamese'.toLowerCase();
+  if (answerThree === responseThree) {
+    alert('Yes, I love it!');
+    counter++;
+  } else {
+    alert('No, it\'s Vietnamese food');
+  }
+  console.log('VietnameseFood', answerThree);
+  console.log('VietnameseFood', responseThree);
 }
-console.log('VietnameseFood', answerThree);
-console.log('VietnameseFood', responseThree);
 
-var answerFour = prompt('What is my favorite show right now?').toLowerCase();
-var responseFour = '90 Day Fiance'.toLowerCase();
-if (answerFour === responseFour) {
-  alert('Yes that\'s right!');
-  counter++;
-} else {
-  alert('Nah you wrong');
-}
-console.log('90DayFiance', answerFour);
-console.log('90 Day Fiance', responseFour);
+thirdQuestion();
 
-var answerFive = prompt('Am I good at sports? Please answer yes or no.').toLowerCase();
-var responseFive = 'No';
-if (answerFive === responseFive) {
-  alert('That\'s correct!');
-  counter++;
-} else {
-  alert('That\'s incorrect.');
+function fourthQuestion() {
+  var answerFour = prompt('What is my favorite show right now?').toLowerCase();
+  var responseFour = '90 Day Fiance'.toLowerCase();
+  if (answerFour === responseFour) {
+    alert('Yes that\'s right!');
+    counter++;
+  } else {
+    alert('Nah you wrong');
+  }
+  console.log('90DayFiance', answerFour);
+  console.log('90 Day Fiance', responseFour);
 }
-console.log('No', answerFive);
-console.log ('No', responseFive);
 
-var answerSix = parseInt(prompt('How many siblings do I have?').toLowerCase());
-var responseSix = 6;
-if (answerSix === responseSix) {
-  alert('That\'s right! How did you know?');
-  counter++;
-} else {
-  alert('That\'s wrong!!!!');
+fourthQuestion();
+
+function fifthQuestion() {
+  var answerFive = prompt('Am I good at sports? Please answer yes or no.').toLowerCase();
+  var responseFive = 'No';
+  if (answerFive === responseFive) {
+    alert('That\'s correct!');
+    counter++;
+  } else {
+    alert('That\'s incorrect.');
+  }
+  console.log('No', answerFive);
+  console.log ('No', responseFive);
 }
-console.log('7', answerSix);
-console.log('7', responseSix);
+
+fifthQuestion();
+
+
+function sixthQuestion() {
+  var answerSix = parseInt(prompt('How many siblings do I have?').toLowerCase());
+  var responseSix = 6;
+  if (answerSix === responseSix) {
+    alert('That\'s right! How did you know?');
+    counter++;
+  } else {
+    alert('That\'s wrong!!!!');
+  }
+  console.log('7', answerSix);
+  console.log('7', responseSix);
+}
+
+sixthQuestion();
 
 function seventhQuestion() {
   var answerSeven = prompt('What is my favorite color?').toLowerCase();
